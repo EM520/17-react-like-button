@@ -6,9 +6,10 @@ import { useState, useEffect} from "react"
 function App() {
   const [count, setCount] = useState(0);
   const [text,setText] = useState("likes")
-  // useEffect(() => {
-  //   count==1?setText("like"):setText("likes")
-  // }, [text]);
+  useEffect(() => {
+    count==1?
+      setText("like"):setText("likes")
+  });
   // function handleClick() {
   //   setText(count+1);
   // }
